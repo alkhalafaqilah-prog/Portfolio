@@ -148,6 +148,50 @@ nav .middle a span{
     color:#eeeff1;
 }
 
+/*Section 3: Skills (Comp) page*/
+.skillsC-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+
+}
+
+.skillsC-section h3{
+    text-align: left;
+    font-size: 20px;
+    color:#eeeff1;
+    font-weight: 300;
+    padding-bottom:30px;
+}
+
+.skillsC-section .cellsC{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skillsC-section .cellsC .cellC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid #c0f0ff;
+    border-radius: 5px;
+}
+
+.skillsC-section .cellsC .cellC img{
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+.skillsC-section .cellsC .cellC span{
+    font-size: 16px;
+    color:#eeeff1;
+}
+
 /* This is to make it responsive (S:Under Ctrl YT)*/
 @media (max-width: 850px){
     /*Section 1: About*/
@@ -185,9 +229,24 @@ nav .middle a span{
     .about {
         padding: 0 20px;
     }
+    /*Section 2: Skills (Elec) page*/
+    .skillsE-section{
+        padding: 0 20px;
+    }
+    .skillsE-section .cellsE .cellE span{
+        font-size: 14px;
+    }
+
+    /*Section 3: Skills (Comp) page*/
+    .skillsC-section{
+        padding: 0 20px;
+    }
+    .skillsC-section .cellsC .cellC span{
+        font-size: 14px;
+    }
 }
 
-/* This is to make slide Images (S:Skillthrive YT)*/
+/* This is to make Image slider (S:Skillthrive YT)*/
 .container{
     padding: 2rem;
 }
