@@ -1,7 +1,7 @@
 :root {
 --text-color: #1a1c20;
 --link-color: #4a76ee;
---background-color: #eeeff1;
+--background-color: #575757;
 }
 
 * {
@@ -14,7 +14,8 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    font-family: 'Poppins', sans-serif ;
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: 400; 
     background-color: var(--background-color);
 }
 
@@ -64,7 +65,109 @@ nav .middle a span{
     padding: 20px;
 }
 
+/* Section 1: About */
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    margin-bottom: 100px;
+    flex-direction: column;
+    align-items: center; 
+    text-align: left; 
+}
+
+.about .text {
+    flex: 5;
+    padding: 20px;
+    text-align: justify;
+}
+ 
+.main-text h1{
+    font-size: 50px;
+    color:#74c0fc;
+    text-align: center;
+    font-weight: 400; 
+}
+.main-text h4{
+    color:#eeeff1;
+    text-align: center;
+    font-weight: 300; 
+}
+.about .text p{
+     color: #eeeff1;
+}
+
+/*Section 2: Skills (Elec) page*/
+.skillsE-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+
+}
+.skillsE-section h2{
+    text-align: left;
+    font-size: 35px;
+    color:#74c0fc;
+    font-weight: 300; 
+    padding-bottom:10px;
+}
+
+.skillsE-section h3{
+    text-align: left;
+    font-size: 20px;
+    color:#eeeff1;
+    font-weight: 300;
+    padding-bottom:30px;
+}
+
+.skillsE-section .cellsE{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skillsE-section .cellsE .cellE{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid #c0f0ff;
+    border-radius: 5px;
+}
+
+.skillsE-section .cellsE .cellE img{
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+.skillsE-section .cellsE .cellE span{
+    font-size: 16px;
+    color:#eeeff1;
+}
+
 /* This is to make it responsive (S:Under Ctrl YT)*/
+@media (max-width: 850px){
+    /*Section 1: About*/
+    .main-text h1{
+        font-size: 20px;
+    }
+    .about .text{
+        font-size: 15px;
+    }
+    .about .container{
+        width:600px;
+    }
+}
+
+@media (max-width: 740px){
+    /*Section 1: About*/
+    .about .container{
+        width:400px;
+    }
+}
 @media (max-width: 600px){
     /*NAVBAR*/
     nav{
@@ -77,6 +180,10 @@ nav .middle a span{
 
     nav .middle a span{
         display: none;
+    }
+    /*Section 1: About*/
+    .about {
+        padding: 0 20px;
     }
 }
 
