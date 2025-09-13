@@ -13,13 +13,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Aqilah Alkhalaf - Portfolio</title>
+    <link rel="icon" type="image/png" href="images/electrical-engineer.png">
+        <title>Aqilah Alkhalaf - Portfolio</title>
 </head>
 <body>
      <!--NAVBAR-->
     <nav>
     <div class="top">
-        <a href="/">Image</a>
+        <a href="#main-text">
+        <img src="images/NavImg.jpg" alt="Image on NavBar">
+        </a>
     </div>
 
     <div class="middle">
@@ -56,12 +59,12 @@
 
     <div class="main">
         <!--Header Title-->
-        <div class="main-text">
+        <div id ="main-text" class="main-text">
             <h1>I'm Aqilah Alkhalaf.</h1>
             <h4>Electrical & Computer Engineer</h4>
         </div>
         <!--Section 1: About page-->
-        <section class="about">
+        <section id="about" class="about">
             <section class="container">
              <div class="slider-warpper">
                 <div class="slider">
@@ -174,13 +177,36 @@
         </section>
 
         <!--Section 4: Projects page-->
-        <section id="projects">
+        <section id="projects" class="projects-section">
 
         </section>
 
         <!--Section 5: Contact page-->
-        <section id="contact"></section>
+        <section id="contact" class="contact-section">
+            <h2>Get in Touch</h2>
+            <div class="group">
+                <div class ="text">
+                    I am actively seeking new opportunities and challenges. 
+                    If you have a project in mind or just want to say hi, 
+                    feel free to reach out!
+                </div>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" cols="30" rows="10"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
         
     </div>
 </body>
+<footer>
+    <p>&copy; 2025 Aqilah Alkhalaf. All rights reserved.</p>
+</footer>
 </html>

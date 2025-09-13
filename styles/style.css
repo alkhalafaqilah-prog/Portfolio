@@ -1,6 +1,6 @@
 :root {
 --text-color: #1a1c20;
---link-color: #4a76ee;
+--link-color: #c0f0ff;
 --background-color: #575757;
 }
 
@@ -17,6 +17,8 @@ body{
     font-family: 'Montserrat', sans-serif ;
     font-weight: 400; 
     background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 a{
@@ -28,7 +30,7 @@ a{
 nav {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* This is the key property */
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     top: 0;
@@ -38,6 +40,19 @@ nav {
     padding: 20px 0;
     background-color: #333;
     color: white;
+}
+
+nav .top a img{
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    margin-bottom: none;
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
+
+.middle {
+ margin-top: -80px; 
 }
 
 .middle a {
@@ -55,9 +70,9 @@ nav {
 nav .middle a span{
     margin-left: 15px;
 }
- nav .bottom a{
+nav .bottom a{
     margin:0 10px;
- }
+}
 
 /* This is for the main container */
 .main{
@@ -192,6 +207,71 @@ nav .middle a span{
     color:#eeeff1;
 }
 
+/* Section 5: Contact */
+.contact-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.contact-section h2{
+    font-size: 35px;
+    color:#74c0fc;
+    font-weight: 300; 
+}
+.contact-section .group{
+    display: flex;
+    gap: 50px;
+}
+
+.contact-section .group .text{
+    flex:3;
+    margin-top: 20px;
+    font-size: 16px;
+    color:#eeeff1;
+}
+.contact-section .group form{
+    flex:3;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea{
+    font-family: 'Montserrat', sans-serif ;
+    font-size: 16px;
+    color: #eeeff1;
+    border: 1.5px solid var(--link-color);
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+}
+
+.contact-section .group form label{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif ;
+    color: #eeeff1;
+}
+
+.contact-section .group form button{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif ;
+    color: #fff;
+    background-color: var(--link-color);
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.contact-section .group form button:hover{
+    filter: brightness(.9);
+
+}
+
 /* This is to make it responsive (S:Under Ctrl YT)*/
 @media (max-width: 850px){
     /*Section 1: About*/
@@ -211,7 +291,12 @@ nav .middle a span{
     .about .container{
         width:400px;
     }
+    /* Section 5: Contact */
+    .contact-section .group{
+        flex-direction: column;
+    }
 }
+
 @media (max-width: 600px){
     /*NAVBAR*/
     nav{
@@ -243,6 +328,11 @@ nav .middle a span{
     }
     .skillsC-section .cellsC .cellC span{
         font-size: 14px;
+    }
+
+    /* Section 5: Contact */
+    .contact-section .group{
+      padding: 0 20px;
     }
 }
 
@@ -294,4 +384,15 @@ nav .middle a span{
 
 .slider-nav a:hover{
     opacity: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; 
+}
+
+footer p {
+    color: white;
+    font-size: 14px;
 }
