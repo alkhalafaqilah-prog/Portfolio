@@ -296,15 +296,15 @@
                     If you have a project in mind or just want to say hi, 
                     feel free to reach out!
                 </div>
-                <form id="messageForm" action="https://submit-form.com/YTJbw2E91" onsubmit="return validateForm()" novalidate>
+                <form id="messageForm" action="https://submit-form.com/YTJbw2E91" method="POST" onsubmit="return validateForm()" novalidate>
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" placeholder="" required="">
 
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" placeholder="" required="">
 
                     <label for="message">Message</label>
-                    <textarea id="message"  name="message" cols="30" rows="10" required></textarea>
+                    <textarea id="message"  name="message" placeholder="" required="" cols="30" rows="10"></textarea>
                     <button type="submit">Send</button>
                 </form>
             </div>
