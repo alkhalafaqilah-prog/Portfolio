@@ -14,7 +14,8 @@
 
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="icon" type="image/png" href="images/electrical-engineer.png">
-        <title>Aqilah Alkhalaf - Portfolio</title>
+    <title>Aqilah Alkhalaf - Portfolio</title>
+    <script src="./scripts/app.js"></script>
 </head>
 <body>
      <!--NAVBAR-->
@@ -197,7 +198,10 @@
                         under Saudi Industrial Services Company (SISCO) 
                         for the services of the logistics parking site.
                     </p>
-                    <div class="btn">View more</div>
+                    <!--Copied from Stack Overflow-->
+                    <a href="/images/Parking System (SISCO)_Aqilah AlKhalaf.pdf" download>
+                        <div class="btn">View more</div>
+                    </a>
                 </div>
 
                 <div class="project-card">
@@ -292,15 +296,15 @@
                     If you have a project in mind or just want to say hi, 
                     feel free to reach out!
                 </div>
-                <form>
+                <form id="messageForm" action="https://submit-form.com/YTJbw2E91" onsubmit="return validateForm()" novalidate>
                     <label for="name">Name</label>
-                    <input type="text" id="name">
+                    <input type="text" id="name" name="name" required>
 
                     <label for="email">Email</label>
-                    <input type="email" id="email">
+                    <input type="email" id="email" name="email" required>
 
                     <label for="message">Message</label>
-                    <textarea id="message" cols="30" rows="10"></textarea>
+                    <textarea id="message"  name="message" cols="30" rows="10" required></textarea>
                     <button type="submit">Send</button>
                 </form>
             </div>

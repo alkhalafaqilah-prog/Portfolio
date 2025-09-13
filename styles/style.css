@@ -67,6 +67,7 @@ nav .top a img{
 .middle a:hover {
     background-color: #575757;
 }
+
 nav .middle a span{
     margin-left: 15px;
 }
@@ -325,6 +326,14 @@ nav .bottom a{
     outline: none;
     resize: none;
     border-radius: 5px;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none; 
+    border: 2px solid #74C0FC; 
+    box-shadow: 0 0 5px #74C0FC; 
+    transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-section .group form label{
